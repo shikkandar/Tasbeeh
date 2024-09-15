@@ -99,7 +99,7 @@ button:active {
 
 .edit{
   position: fixed;
-  bottom: 30px;
-  left: 30px;
+  bottom: 15px;
+  left: 15px;
   border-radius: 50% !important;
 }
