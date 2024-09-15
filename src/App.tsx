@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import bg from "./assets/dark-landscape-with-bird-flying.jpg";
+
 
 function App() {
   const [count, setCount] = useState(0);
