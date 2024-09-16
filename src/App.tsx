@@ -41,18 +41,19 @@ function App() {
   const handleClick = () => {
     setCount(count + 1);
 
-    if (count === 100) {
+    if (count === 99) {
       setCount(0);
-      setHundredCount(hundredCount + count);
-      localStorage.setItem("count_100", (hundredCount + count).toString());
+      setHundredCount(hundredCount + 100);
+      localStorage.setItem("count_100", (hundredCount + 100).toString());
     }
 
     if (hundredCount === 1000) {
       setHundredCount(0);
-      setThousandCount(thousandCount + hundredCount);
+      localStorage.setItem("count_100", (0).toString());
+      setThousandCount(thousandCount + 1000);
       localStorage.setItem(
         "count_1000",
-        (thousandCount + hundredCount).toString()
+        (thousandCount + 1000).toString()
       );
     }
   };
